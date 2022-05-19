@@ -1,0 +1,50 @@
+---
+import Header from '../components/Header.astro'
+const {pageTitle} = Astro.props
+---
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<title>{pageTitle}</title>
+	
+      <style>
+        header {
+            display: flex;
+            flex-direction: column;
+            gap: 1em;
+            max-width: min(100%, 68ch);
+        }
+        article {
+            padding-top: 2em;
+            line-height: 1.5;
+            display: flex;
+            flex-direction: column;
+            gap: 1em;
+            max-width: 70ch;
+        }
+        .banner {
+            text-align: center;
+            font-size: 1.2rem;
+            background: var(--color-light);
+            padding: 1em 1.5em;
+            padding-left: 0.75em;
+            border-radius: 4px;
+        }
+    </style>
+    <style is:global>
+        pre {
+            padding: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+<center><a href="/"><img src="https://americanshootingjournal.com/wp-content/uploads/2021/03/AmSJlogo6.jpg" width="700"></a></center>
+
+	<div>
+		<Header/>
+        <slot />
+	</div>
+</body>
+</html>
