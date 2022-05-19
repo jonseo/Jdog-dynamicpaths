@@ -1,0 +1,17 @@
+---
+import Base from '../layouts/Base.astro';
+
+const { post } = Astro.props
+//console.log(post);
+---
+
+ 
+<div>
+ 
+  <!--img src="{post._embedded['wp:featuredmedia']['0']media_details.source_url}" width="200" /-->
+ post.yoast_head_json.fimg_url
+  <h2>{post.title.rendered}</h2>
+  <a href={`/` + post.slug}>Read more</a> 
+  Hells Bells
+</div>
+ <br/>
