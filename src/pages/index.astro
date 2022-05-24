@@ -55,7 +55,7 @@ const firstaPage = data.slice(5, 10);
         </ul-->
 
 {firstPage.map(post => {
-    return <ul><li>
+    return <ul><li><img src={post.fimg_url} width="200" />
     <a href="${post.slug}"><h2>{post.title.rendered}</h2></a></li>
     </ul><br>;
 })}
@@ -68,7 +68,8 @@ const firstaPage = data.slice(5, 10);
  <div>
 
 {firstaPage.map(post => {
-    return <ul><li><a href="${post.slug}"><h2>{post.title.rendered}</h2></a></li>
+    return <ul><li><img src={post.fimg_url} width="200" />
+	    <a href="${post.slug}"><h2>{post.title.rendered}</h2></a></li>
     </ul><br>;
 })}
 </div>
