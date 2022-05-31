@@ -31,6 +31,10 @@ const {pageTitle} = Astro.props
             padding-left: 0.75em;
             border-radius: 4px;
         }
+	 .responsive {
+        width: 100%;
+        height: auto;
+	}
     </style>
     <style is:global>
         pre {
@@ -40,7 +44,7 @@ const {pageTitle} = Astro.props
 </head>
 
 <body>
-<center><a href="/"><img src="https://americanshootingjournal.com/wp-content/uploads/2021/03/AmSJlogo6.jpg" width="700"></a></center>
+<center><a href="/"><img src="https://americanshootingjournal.com/wp-content/uploads/2021/03/AmSJlogo6.jpg" class="responsive" width="700"></a></center>
 
 	<div>
 		<Header/>
