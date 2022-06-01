@@ -12,6 +12,7 @@ export async function getStaticPaths() {
 const {post} = Astro.props;
 ---
 <Base>
+  <br/>
   <article id="test">
     <h1>{post.title.rendered}</h1>
     <Fragment set:html=
